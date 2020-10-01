@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,40 +30,31 @@
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
 
     <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray">Blooger</a>
-            </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <div>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Category</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Archive</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Pages</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social text-gray">
+        <header class="text-gray-700 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Blooger</span>
+    </a>
+    <nav style="padding-bottom: 0px; font: bold;" class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900">Home</a>
+      <a class="mr-5 hover:text-gray-900">Category</a>
+      <a class="mr-5 hover:text-gray-900">Archive</a>
+      <a class="mr-5 hover:text-gray-900">Pages</a>
+      <a class="mr-5 hover:text-gray-900">Contact Us</a>
+  
+     <div class="social text-gray">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
+            </div> </nav>
+  </div>
+   
+</header>
+           
         </div>
     </nav>
 
